@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips/src/PlatziTrips.dart';
+import 'package:platzi_trips/src/User/bloc/UserBloc.dart';
 
 void main(){
   SystemChrome.setSystemUIOverlayStyle(
@@ -14,14 +16,16 @@ void main(){
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Flutter Demo",
-      theme: ThemeData(
-        primarySwatch: Colors.indigo
+    return BlocProvider(
+      bloc: UserBloc(),
+      child: MaterialApp(
+        title: "Flutter Demo",
+        theme: ThemeData(
+          primarySwatch: Colors.indigo
+        ),
+        home: PlatziTrips(),
       ),
-      home: PlatziTrips(),
     );
   }
-  
 }
 
