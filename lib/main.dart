@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
-import 'package:platzi_trips/src/PlatziTrips.dart';
 import 'package:platzi_trips/src/User/bloc/UserBloc.dart';
+import 'package:platzi_trips/src/User/ui/screens/SigninScreen.dart';
 
 void main(){
   SystemChrome.setSystemUIOverlayStyle(
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.indigo
         ),
-        home: PlatziTrips(),
+        home: SignInScreen(),
       ),
     );
   }
