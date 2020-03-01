@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682083379822",
+    "firebase_url": "https://platzitripsflutter-6bc57.firebaseio.com",
+    "project_id": "platzitripsflutter-6bc57",
+    "storage_bucket": "platzitripsflutter-6bc57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682083379822:android:06dbd88ba792b384b6547f",
+        "android_client_info": {
+          "package_name": "com.example.platzi_trips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682083379822-dgdm4pbv570rj9d9dvgvnkc2q088ogo6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.platzi_trips",
+            "certificate_hash": "e5097a7bccee3f21e2b2303533786b9d13228b0c"
+          }
+        },
+        {
+          "client_id": "682083379822-97ha406dcdj2gn9tg1akcbaoehlqm2cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDap7eDH0oxUTL9yGcimAbvGDDhNUYehjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682083379822-97ha406dcdj2gn9tg1akcbaoehlqm2cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
