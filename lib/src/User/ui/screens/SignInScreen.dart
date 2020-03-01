@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips/src/PlatziTrips.dart';
 import 'package:platzi_trips/src/User/bloc/UserBloc.dart';
+import 'package:platzi_trips/src/User/model/User.dart';
 import 'package:platzi_trips/src/widgets/ButtonGreen.dart';
 import 'package:platzi_trips/src/widgets/GradientBack.dart';
 
@@ -37,7 +38,14 @@ class _SignInScreen extends State<SignInScreen> {
   Widget signInGoogleUI() {
     void onPress(){
       userBloc.signIn()
-        .then((FirebaseUser user) => print("user: ${user.displayName}"));
+        .then((FirebaseUser user) {
+          userBloc.updateUserData(User(
+            uid: user.uid,
+            email: user.email,
+            name: user.displayName,
+            photoUrl: user.photoUrl
+          ));
+        });
     }
 
     return Scaffold(
