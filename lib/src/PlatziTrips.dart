@@ -19,6 +19,13 @@ class _PlatziTrips extends State<PlatziTrips> {
     });
   }
 
+  BlocProvider<UserBloc> blocProvider(Widget body) {
+    return BlocProvider(
+        bloc: UserBloc(),
+        child: body
+      );
+    }
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> widgetsChildren = [
@@ -28,7 +35,7 @@ class _PlatziTrips extends State<PlatziTrips> {
     ];
 
     return Scaffold(
-      body: widgetsChildren[this.indexTap],
+      body: this.blocProvider(widgetsChildren[this.indexTap]),
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
           canvasColor: Colors.white,
