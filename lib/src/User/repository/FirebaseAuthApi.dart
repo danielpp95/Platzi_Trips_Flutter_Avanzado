@@ -20,4 +20,9 @@ class FirebaseAuthApi {
 
     return user;
   }
+
+  signOut() async {
+    await _auth.signOut().then((onValue) => print("LogOut from firebase"));
+    await  googleSignIn.signOut().then((onValue) => "LogOut from google");
+  }
 }

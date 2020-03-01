@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:platzi_trips/src/Place/ui/screens/HomeTrips.dart';
 import 'package:platzi_trips/src/Search/ui/screens/SearchTrips.dart';
+import 'package:platzi_trips/src/User/bloc/UserBloc.dart';
 import 'package:platzi_trips/src/User/ui/screens/ProfileTrips.dart';
 
 class PlatziTrips extends StatefulWidget {
@@ -48,7 +50,7 @@ class _PlatziTrips extends State<PlatziTrips> {
                 icon: Icon(Icons.person),
                 title: Text("")
             )
-          ],
+          ]
         ),
       ),
     );
